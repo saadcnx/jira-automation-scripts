@@ -54,7 +54,7 @@ An intelligent automation that:
 
 1. Clone the repository  
    ```bash
-   git clone https://github.com/YOURUSERNAME/jira-automation-suite.git
+   git clone https://github.com/saadcnx/jira-automation-scripts.git
    cd jira-automation-suite
 
 
