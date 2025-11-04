@@ -1,21 +1,60 @@
 
-# 🧩 JIRA Automation Scripts
+# 🧠 JIRA Automation Suite (by Saad Khan)
 
-This repository contains Python-based automation scripts integrating with Atlassian JIRA using its REST API.
+Automating project management tasks using **Python** and the **Atlassian JIRA REST API**.  
+This collection of scripts helps teams save time by automating repetitive operations like ticket creation, system monitoring, and support email notifications.
 
-## 🚀 Features
-- **Script 1:** Automatically creates and comments on JIRA tickets.
-- **Script 2:** Monitors server memory via SSH and raises JIRA tickets when memory is low.
-- **Script 3:** Sends automated acknowledgment emails for new JIRA issues.
+---
 
-## 🧰 Technologies
-- Python 3
-- JIRA REST API (`jira` library)
-- Paramiko (SSH)
-- SMTP (for email automation)
+## 🚀 Overview
 
-## 📬 Author
-👨‍💻 **Saad Khan**  
-📧 [saadcnx@gmail.com](mailto:saadcnx@gmail.com)  
-💼 [LinkedIn](https://linkedin.com/in/YOUR-LINKEDIN-USERNAME)
+### 🎫 **Auto Ticket Creator**
+A Python automation that connects to JIRA and:
+- Creates new JIRA tickets programmatically  
+- Adds formatted comments with timestamps  
+- Fetches and displays complete issue details and discussion history  
+
+**Use Case:** Streamlining ticket creation and updates for QA and project teams.
+
+---
+
+### 🧮 **Server Health Monitor**
+A lightweight script that:
+- Connects to remote servers via SSH (using Paramiko)  
+- Monitors system memory usage in real-time  
+- Automatically creates a **“High Priority JIRA Task”** if available memory drops below a defined threshold  
+
+**Use Case:** DevOps and SRE teams can proactively detect and respond to server issues.
+
+---
+
+### 📧 **Automated Acknowledgment Mailer**
+An intelligent automation that:
+- Scans JIRA for **newly created unassigned issues** in the last 5 minutes  
+- Sends a personalized acknowledgment email to the issue reporter  
+- Notifies both the reporter and support team (via CC)  
+
+**Use Case:** Customer support teams can instantly confirm issue receipt without manual effort.
+
+---
+
+## 🧰 Tech Stack
+
+| Technology | Purpose |
+|-------------|----------|
+| **Python 3** | Core scripting language |
+| **Atlassian JIRA API (jira library)** | JIRA automation & integration |
+| **Paramiko** | SSH for remote server monitoring |
+| **smtplib** | Email automation via Gmail SMTP |
+| **datetime, os** | Time formatting & environment handling |
+
+---
+
+## ⚙️ Setup Instructions
+
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/YOURUSERNAME/jira-automation-suite.git
+   cd jira-automation-suite
+
 
